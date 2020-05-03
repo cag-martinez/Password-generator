@@ -50,11 +50,10 @@ function writePassword() {
   
   function generatePassword() {
     for (var i = 0; i < 127;) {
+      var newLetter = [j];
     var j = Math.floor(Math.random() * (length));
-  var newLetter = j;
-  password = password + newLetter
   
-  alert(generatPpassword);
+  password = password + newLetter
   }
 }
 }
@@ -62,3 +61,7 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function writePassword() {
+  alert ("your password is" + password)
+}
